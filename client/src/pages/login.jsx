@@ -166,7 +166,7 @@ const LoginPage = () => {
         //         </div>
         //     </div>
         // </div>
-        <AuthLayout>
+        <AuthLayout type="login">
             <FormLogin action="/" />
         </AuthLayout>
     );

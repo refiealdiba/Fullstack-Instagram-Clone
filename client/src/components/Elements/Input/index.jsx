@@ -12,7 +12,7 @@ const RowInput = (props) => {
 
     return (
         <div
-            className={`relative flex flex-col bg-g text-xs border px-3 mb-4 rounded-sm bg-gray-50 ${inputPositionClass}`}
+            className={`relative flex flex-col bg-g text-xs border px-3 mb-2 rounded-sm bg-gray-50 ${inputPositionClass}`}
         >
             <Label
                 style={`absolute text-gray-600 transition-all duration-200 ease-in-out ${labelPositionClass} cursor-text`}
