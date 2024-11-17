@@ -1,10 +1,29 @@
+import { useState } from "react";
 import RowInput from "../Elements/Input";
 import Button from "../Elements/Button";
+import { login } from "../../services/auth.service";
 
-const FormLogin = (action) => {
+const FormLogin = () => {
+    const [loginFailed, setLoginFailed] = useState("");
+    const handleLogin = (e) => {
+        e.preventDefault();
+        const data = {
+            username: e.target.username.value,
+            password: e.target.password.value,
+        };
+
+        login(data, (success, res) => {
+            if (success) {
+                localStorage.setItem("token", res.token);
+                window.location.href = "/";
+            } else {
+                setLoginFailed(res.response.data.message);
+            }
+        });
+    };
     return (
         <>
-            <form action={action}>
+            <form onSubmit={handleLogin}>
                 <RowInput
                     type="text"
                     id="username"
@@ -16,6 +35,7 @@ const FormLogin = (action) => {
                     style="bg-blue-500 text-white w-full py-1.5 font-semibold text-sm rounded-md mt-2"
                     text="Masuk"
                 />
+                {loginFailed && <p className="text-red-600 text-center mt-5">{loginFailed}</p>}
             </form>
             <div className="flex w-full justify-center items-center gap-5 mt-5 mb-6 text-xs font-medium">
                 <div className="w-2/4 h-[0.2px] border"></div>
