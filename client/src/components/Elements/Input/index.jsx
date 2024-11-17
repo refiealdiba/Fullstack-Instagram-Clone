@@ -24,6 +24,7 @@ const RowInput = (props) => {
                 id={id}
                 style="outline-none focus:border-gray-700 border-gray-300 bg-none"
                 value={val}
+                name={id}
                 handleInput={handleInput}
             />
         </div>

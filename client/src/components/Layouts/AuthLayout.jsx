@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const AuthLayout = (props) => {
     const { children, type } = props;
     return (
-        <div className="flex flex-col items-center justify-center h-screen pt-5">
+        <div className="flex flex-col items-center justify-center min-h-screen pt-5">
             <div className="border border-gray-300 px-10 pt-2 pb-4">
                 <div className="bg-full text-center px-14 py-5 mb-4">
                     <img
@@ -36,7 +36,7 @@ const AuthLayout = (props) => {
                     </a>
                 </div>
             </div>
-            <div className="flex flex-col items-center text-xs mt-32 text-gray-500">
+            <div className="flex flex-col items-center text-xs mt-28 text-gray-500">
                 <ul className="flex justify-center gap-4 mt-3">
                     <li>
                         <a href="">Meta</a>
