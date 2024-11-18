@@ -359,7 +359,47 @@ const Home = () => {
                 </aside>
             </div>
             <main className="flex justify-center w-full gap-10">
-                <div className="border">main</div>
+                <div className="border py-5">
+                    <div className="flex gap-3">
+                        <a href="" className="flex flex-col items-center">
+                            <div className="w-14 h-14 rounded-full bg-white"></div>
+                            <p>ayam</p>
+                        </a>
+                        <a href="" className="flex flex-col items-center">
+                            <div className="w-14 h-14 rounded-full bg-white"></div>
+                            <p>ayam</p>
+                        </a>
+                        <a href="" className="flex flex-col items-center">
+                            <div className="w-14 h-14 rounded-full bg-white"></div>
+                            <p>ayam</p>
+                        </a>
+                        <a href="" className="flex flex-col items-center">
+                            <div className="w-14 h-14 rounded-full bg-white"></div>
+                            <p>ayam</p>
+                        </a>
+                        <a href="" className="flex flex-col items-center">
+                            <div className="w-14 h-14 rounded-full bg-white"></div>
+                            <p>ayam</p>
+                        </a>
+                        <a href="" className="flex flex-col items-center">
+                            <div className="w-14 h-14 rounded-full bg-white"></div>
+                            <p>ayam</p>
+                        </a>
+                        <a href="" className="flex flex-col items-center">
+                            <div className="w-14 h-14 rounded-full bg-white"></div>
+                            <p>ayam</p>
+                        </a>
+                        <a href="" className="flex flex-col items-center">
+                            <div className="w-14 h-14 rounded-full bg-white"></div>
+                            <p>ayam</p>
+                        </a>
+                        <a href="" className="flex flex-col items-center">
+                            <div className="w-14 h-14 rounded-full bg-white"></div>
+                            <p>ayam</p>
+                        </a>
+                    </div>
+                    <div></div>
+                </div>
                 <div className="border">profile and recommendation</div>
             </main>
         </div>
