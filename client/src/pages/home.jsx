@@ -19,7 +19,7 @@ const Home = () => {
 
     return (
         <div className="flex border min-h-screen bg-black text-white">
-            <div className="w-3/12">
+            <div className="w-2/12 fixed h-full">
                 <aside className="flex flex-col justify-between border h-full py-10 px-5">
                     <div className="flex flex-col">
                         <div className="mb-5">
@@ -359,46 +359,299 @@ const Home = () => {
                 </aside>
             </div>
             <main className="flex justify-center w-full gap-10">
-                <div className="border py-5">
-                    <div className="flex gap-3">
-                        <a href="" className="flex flex-col items-center">
-                            <div className="w-14 h-14 rounded-full bg-white"></div>
-                            <p>ayam</p>
+                {/* content */}
+                <div className="border py-5 max-w-2xl w-full">
+                    {/* stories */}
+                    <div className="flex gap-5 justify-center text-sm">
+                        <a href="" className="flex flex-col items-center justify-center">
+                            <div className="w-12 h-12 rounded-full bg-white"></div>
+                            <p className="pt-1">ayam</p>
                         </a>
-                        <a href="" className="flex flex-col items-center">
-                            <div className="w-14 h-14 rounded-full bg-white"></div>
-                            <p>ayam</p>
+                        <a href="" className="flex flex-col items-center justify-center">
+                            <div className="w-12 h-12 rounded-full bg-white"></div>
+                            <p className="pt-1">ayam</p>
                         </a>
-                        <a href="" className="flex flex-col items-center">
-                            <div className="w-14 h-14 rounded-full bg-white"></div>
-                            <p>ayam</p>
+                        <a href="" className="flex flex-col items-center justify-center">
+                            <div className="w-12 h-12 rounded-full bg-white"></div>
+                            <p className="pt-1">ayam</p>
                         </a>
-                        <a href="" className="flex flex-col items-center">
-                            <div className="w-14 h-14 rounded-full bg-white"></div>
-                            <p>ayam</p>
+                        <a href="" className="flex flex-col items-center justify-center">
+                            <div className="w-12 h-12 rounded-full bg-white"></div>
+                            <p className="pt-1">ayam</p>
                         </a>
-                        <a href="" className="flex flex-col items-center">
-                            <div className="w-14 h-14 rounded-full bg-white"></div>
-                            <p>ayam</p>
+                        <a href="" className="flex flex-col items-center justify-center">
+                            <div className="w-12 h-12 rounded-full bg-white"></div>
+                            <p className="pt-1">ayam</p>
                         </a>
-                        <a href="" className="flex flex-col items-center">
-                            <div className="w-14 h-14 rounded-full bg-white"></div>
-                            <p>ayam</p>
+                        <a href="" className="flex flex-col items-center justify-center">
+                            <div className="w-12 h-12 rounded-full bg-white"></div>
+                            <p className="pt-1">ayam</p>
                         </a>
-                        <a href="" className="flex flex-col items-center">
-                            <div className="w-14 h-14 rounded-full bg-white"></div>
-                            <p>ayam</p>
+                        <a href="" className="flex flex-col items-center justify-center">
+                            <div className="w-12 h-12 rounded-full bg-white"></div>
+                            <p className="pt-1">ayam</p>
                         </a>
-                        <a href="" className="flex flex-col items-center">
-                            <div className="w-14 h-14 rounded-full bg-white"></div>
-                            <p>ayam</p>
-                        </a>
-                        <a href="" className="flex flex-col items-center">
-                            <div className="w-14 h-14 rounded-full bg-white"></div>
-                            <p>ayam</p>
+                        <a href="" className="flex flex-col items-center justify-center">
+                            <div className="w-12 h-12 rounded-full bg-white"></div>
+                            <p className="pt-1">ayam</p>
                         </a>
                     </div>
-                    <div></div>
+                    {/* posts */}
+                    <div className="mt-5 w-4/6 mx-auto border-b border-zinc-800 pb-4">
+                        <div className="flex justify-between">
+                            <div className="flex gap-3">
+                                <div className="w-9 h-9 rounded-full bg-white"></div>
+                                <div className="flex flex-col">
+                                    <a href="" className="font-semibold text-sm">
+                                        ayam{" "}
+                                        <span className="font-normal text-zinc-400">• 1 jam</span>
+                                    </a>
+                                    <a href="" className="text-xs">
+                                        {" "}
+                                        Las Vegas, USA
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <button>
+                                    <svg
+                                        aria-label="Opsi lainnya"
+                                        className="w-8 h-8"
+                                        fill="currentColor"
+                                        height="24"
+                                        role="img"
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                    >
+                                        <title>Opsi lainnya</title>
+                                        <circle cx="12" cy="12" r="1.5"></circle>
+                                        <circle cx="6" cy="12" r="1.5"></circle>
+                                        <circle cx="18" cy="12" r="1.5"></circle>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div className="bg-zinc-300 h-[500px] mt-2 rounded-sm"></div>
+                        <div>
+                            {/* buttons */}
+                            <div className="flex py-2 gap-5">
+                                <button>
+                                    <svg
+                                        aria-label="Suka"
+                                        className="w-7 h-7"
+                                        fill="currentColor"
+                                        height="24"
+                                        role="img"
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                    >
+                                        <title>Suka</title>
+                                        <path d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z"></path>
+                                    </svg>
+                                </button>
+                                <button>
+                                    <svg
+                                        aria-label="Komentari"
+                                        className="w-7 h-7"
+                                        fill="currentColor"
+                                        height="24"
+                                        role="img"
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                    >
+                                        <title>Komentari</title>
+                                        <path
+                                            d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            strokeLinejoin="round"
+                                            strokeWidth="2"
+                                        ></path>
+                                    </svg>
+                                </button>
+                                <button>
+                                    <svg
+                                        aria-label="Bagikan"
+                                        className="w-7 h-7"
+                                        fill="currentColor"
+                                        height="24"
+                                        role="img"
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                    >
+                                        <title>Bagikan</title>
+                                        <line
+                                            fill="none"
+                                            stroke="currentColor"
+                                            strokeLinejoin="round"
+                                            strokeWidth="2"
+                                            x1="22"
+                                            x2="9.218"
+                                            y1="3"
+                                            y2="10.083"
+                                        ></line>
+                                        <polygon
+                                            fill="none"
+                                            points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334"
+                                            stroke="currentColor"
+                                            strokeLinejoin="round"
+                                            strokeWidth="2"
+                                        ></polygon>
+                                    </svg>
+                                </button>
+                            </div>
+                            <button className="text-sm font-semibold pb-2">981 suka</button>
+                            <div>
+                                <span className="text-sm">
+                                    <a href="" className="text-sm font-semibold">
+                                        Ayam
+                                    </a>{" "}
+                                    Menurut kalian gimana vibes nya udah Ghibli banget gak?
+                                </span>
+                            </div>
+                            <div>
+                                <button className="text-sm text-zinc-400">
+                                    Lihat semua 17 komentar
+                                </button>
+                            </div>
+                            <div className="text-sm flex">
+                                <input
+                                    type="text"
+                                    className="w-full border-0 focus:outline-none text-white bg-black"
+                                    placeholder="Tambahkan komentar..."
+                                />
+                                <button className="text-blue-500">Kirim</button>
+                            </div>
+                        </div>
+                    </div>
+                    {/* posts */}
+                    <div className="mt-5 w-4/6 mx-auto border-b border-zinc-800 pb-4">
+                        <div className="flex justify-between">
+                            <div className="flex gap-3">
+                                <div className="w-9 h-9 rounded-full bg-white"></div>
+                                <div className="flex flex-col">
+                                    <a href="" className="font-semibold text-sm">
+                                        ayam{" "}
+                                        <span className="font-normal text-zinc-400">• 1 jam</span>
+                                    </a>
+                                    <a href="" className="text-xs">
+                                        {" "}
+                                        Las Vegas, USA
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <button>
+                                    <svg
+                                        aria-label="Opsi lainnya"
+                                        className="w-8 h-8"
+                                        fill="currentColor"
+                                        height="24"
+                                        role="img"
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                    >
+                                        <title>Opsi lainnya</title>
+                                        <circle cx="12" cy="12" r="1.5"></circle>
+                                        <circle cx="6" cy="12" r="1.5"></circle>
+                                        <circle cx="18" cy="12" r="1.5"></circle>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div className="bg-zinc-300 h-[500px] mt-2 rounded-sm"></div>
+                        <div>
+                            {/* buttons */}
+                            <div className="flex py-2 gap-5">
+                                <button>
+                                    <svg
+                                        aria-label="Suka"
+                                        className="w-7 h-7"
+                                        fill="currentColor"
+                                        height="24"
+                                        role="img"
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                    >
+                                        <title>Suka</title>
+                                        <path d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z"></path>
+                                    </svg>
+                                </button>
+                                <button>
+                                    <svg
+                                        aria-label="Komentari"
+                                        className="w-7 h-7"
+                                        fill="currentColor"
+                                        height="24"
+                                        role="img"
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                    >
+                                        <title>Komentari</title>
+                                        <path
+                                            d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            strokeLinejoin="round"
+                                            strokeWidth="2"
+                                        ></path>
+                                    </svg>
+                                </button>
+                                <button>
+                                    <svg
+                                        aria-label="Bagikan"
+                                        className="w-7 h-7"
+                                        fill="currentColor"
+                                        height="24"
+                                        role="img"
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                    >
+                                        <title>Bagikan</title>
+                                        <line
+                                            fill="none"
+                                            stroke="currentColor"
+                                            strokeLinejoin="round"
+                                            strokeWidth="2"
+                                            x1="22"
+                                            x2="9.218"
+                                            y1="3"
+                                            y2="10.083"
+                                        ></line>
+                                        <polygon
+                                            fill="none"
+                                            points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334"
+                                            stroke="currentColor"
+                                            strokeLinejoin="round"
+                                            strokeWidth="2"
+                                        ></polygon>
+                                    </svg>
+                                </button>
+                            </div>
+                            <button className="text-sm font-semibold pb-2">981 suka</button>
+                            <div>
+                                <span className="text-sm">
+                                    <a href="" className="text-sm font-semibold">
+                                        Ayam
+                                    </a>{" "}
+                                    Menurut kalian gimana vibes nya udah Ghibli banget gak?
+                                </span>
+                            </div>
+                            <div>
+                                <button className="text-sm text-zinc-400">
+                                    Lihat semua 17 komentar
+                                </button>
+                            </div>
+                            <div className="text-sm flex">
+                                <input
+                                    type="text"
+                                    className="w-full border-0 focus:outline-none text-white bg-black"
+                                    placeholder="Tambahkan komentar..."
+                                />
+                                <button className="text-blue-500">Kirim</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div className="border">profile and recommendation</div>
             </main>
